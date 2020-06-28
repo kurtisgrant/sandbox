@@ -254,6 +254,10 @@ img {
     padding: 10px;
   }
 
+  .navbar a {
+    padding: 0;
+  }
+
   .navbar nav a {
     flex: 1 1;
     font-size: .85rem;
