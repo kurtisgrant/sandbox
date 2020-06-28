@@ -1,0 +1,89 @@
+header {
+  text-align: center;
+}
+header h1 {
+  float: none;
+  text-align: center;
+}
+header ul, header ul li {
+  float: none;
+}
+header ul li a {
+  padding: 4px 0;
+  border-bottom: #444 dotted 1px;
+}
+.hero {
+  height: 450px;
+  padding-top: 120px;
+}
+.hero h2 {
+font-size: 2rem;
+line-height: 2.5rem;
+padding-bottom: 30px;
+}
+.hero p {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+/*Home Info*/
+#histImg {
+  display: none;
+}
+.twoTiles .fullWidth div{
+  width: 100%;
+}
+
+/* Features Section */
+
+.threeTiles .fullWidth div {
+  float: none;
+  width: 100%;
+  padding: 15px;
+}
+.threeTiles .fullWidth div {
+  height: 300px;
+  padding-top: 60px;
+  overflow: auto;
+}
+.threeTiles .fullWidth h3 {
+  padding-top: 20px;
+}
+
+#about-info div.contentContainer div {
+  width: 100%;
+  float: none;
+}
+#about-info div.contentContainer.py-10 {
+  padding: 30px 0;
+}
+#about-info div.info-right {
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+#testimonials {
+  padding: 30px 0;
+}
+#testimonials .testimonial {
+  width: 95%;
+  font-size: .9rem;
+  line-height: 1.2rem;
+}
+#contact-form {
+  padding: 20px;
+}
+.contactOptions .fullWidth div {
+  float: none;
+  width: 100%;
+  padding: 40px 10px;
+  height: 200px;
+}
+.contactOptions .fullWidth h3 {
+  padding: 5px 0;
+}
+.contactOptions .fullWidth p {
+  padding: 5px 0;
+  padding-top: 0;
+  margin: 0;
+}
+

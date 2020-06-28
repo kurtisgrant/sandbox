@@ -1,0 +1,125 @@
+:root {
+  --page-1-color: steelblue;
+  --page-2-color: tan;
+  --page-3-color: lightseagreen;
+  --page-4-color: mediumpurple;
+  --page-5-color: darksalmon;
+  --animate-speed: 1.6s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Page Colors */
+#page-1 {background: var(--page-1-color)}
+#page-2 {background: var(--page-2-color)}
+#page-3 {background: var(--page-3-color)}
+#page-4 {background: var(--page-4-color)}
+#page-5 {background: var(--page-5-color)}
+
+/* Main Styling */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .page h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 5px;
+    font-weight: 800;
+  }
+  
+  .page p {
+    font-size: 16px;
+  }
+
+  .page div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 10px 10px;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+}
+
+/* Landing Page Animation */
+#page-1 > h1 {
+  transform: translateY(-50vh);
+  animation: animate-from-top var(--animate-speed) forwards ease .5s;
+}
+
+@keyframes animate-from-top {
+  to {
+    transform: translateY(0);
+  }
+}
+
+#page-1 > p {
+  transform: translateX(-100vw);
+  animation: animate-from-left var(--animate-speed) forwards ease 1.4s;
+}
+
+@keyframes animate-from-left {
+  to {
+    transform: translateX(0);
+  }
+}
+
+

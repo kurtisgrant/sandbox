@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="description" content="Welcome to the most extraordinary hotel in central Ontaro, Canada!">
+  <meta name="keywords" content="hotel,central ontario,ontario,cottage country,inn,accommodation">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 500px" href="css/mobile.css">
+  <script src="https://kit.fontawesome.com/814bbed6b7.js" crossorigin="anonymous"></script>
+  <title>Hotel BT | Contact</title>
+</head>
+<body>
+  <header>
+    <div class="contentContainer">
+      <h1 class="logo"><a href="index.html">HBT</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="contact-form" class="py-10">
+    <div class="contentContainer">
+      <h2 class="lTxt"><span class="accentText">Contact</span> Us</h2>
+      <p>Please fill out the form below to contact us</p>
+      <form action="process.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea type="text" name="message" id="message"></textarea>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="contactOptions">
+    <div class="fullWidth">
+      <div id="Location">
+        <i class="fas fa-hotel fa-3x"></i>
+        <h3>Location</h3>
+        <p>123 Address Street<br>City, Ontario A1A 1A1</p>
+      </div>
+      <div id="phoneNumber">
+        <i class="fas fa-phone fa-3x"></i>
+        <h3>Phone Number</h3>
+        <p>(123) 456-7890</p>
+      </div>
+      <div id="emailAddress">
+        <i class="fas fa-envelope fa-3x"></i>
+        <h3>Email Address</h3>
+        <p>frontdesk@hotelbt.io</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="main-footer">
+    <p>Hotel BT &copy; 2020. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

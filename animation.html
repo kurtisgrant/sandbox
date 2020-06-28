@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sandbox | Animation</title>
+  <style> /***************************************Styles****/
+  :root {
+    --box-size: 200px;
+    --animate-distance: 300px;
+  }
+
+  .box {
+    background-color: mediumturquoise;
+    position: relative;
+    width: var(--box-size);
+    height: var(--box-size);
+    border-radius: 50% 50% 0 0;
+    animation: animate1 5s forwards ease-in-out infinite;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes animate1 {
+    25% {
+      top: 0;
+      left: var(--animate-distance);
+      background-color: royalblue;
+      border-radius: 0 50% 50% 0;
+
+    }
+    50% {
+      top: var(--animate-distance);
+      left: var(--animate-distance);
+      background-color: mediumaquamarine;
+      border-radius: 0 0 50% 50%;
+
+    }
+    75% {
+      top: var(--animate-distance);
+      left: 0px;
+      background-color: mediumorchid;
+      border-radius: 50% 0 0 50%;
+
+    }
+  }
+  @media (max-width: 500px) {
+    :root {
+      --box-size: 100px;
+      --animate-distance: 150px;
+    }
+  }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Back</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Animation</h1>
+    <div class="box tb-margin"></div>
+    
+
+  </main>
+</body>
+</html>

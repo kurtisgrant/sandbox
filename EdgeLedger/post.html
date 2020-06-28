@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/814bbed6b7.js"crossorigin="anonymous"></script>
+  <title>EdgeLedger | Blog Post</title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar">
+      <a href="index.html"><h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1></a>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <h1>Blog</h1>
+      
+    </div>
+  </header>
+
+  <main>
+    <section class="post">
+      <h2>We Care About Your Safety</h2>
+      <p class="meta">
+        <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> 
+      | March 4 2020</p>
+      <img src="img/blog/blog1.jpg" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel incidunt voluptatem dolorem quisquam impedit perspiciatis cum amet doloremque, voluptatum dolores possimus sunt quidem molestiae. Cupiditate possimus pariatur, nobis ea eaque neque sunt error optio animi commodi placeat, ullam laboriosam dolore!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ad porro odio vero natus? Voluptatibus laboriosam velit eveniet? Voluptate ab obcaecati quasi perferendis autem dolore tempora a itaque! Recusandae, illo dicta, qui tenetur eveniet consectetur, vel obcaecati autem voluptatem beatae officia modi atque dolorem! Odit porro nesciunt, dolore at, exercitationem deserunt numquam harum consequuntur delectus dolor maxime? Ullam est earum alias nostrum incidunt facere dolorem vero, hic eveniet, neque sequi molestias obcaecati exercitationem fuga sapiente culpa. Rerum architecto reiciendis alias assumenda culpa voluptatum pariatur voluptate officia suscipit labore! Aspernatur et voluptatem assumenda beatae unde tempora ipsa cumque repudiandae a pariatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus debitis consectetur non repellendus perferendis dolore magnam et tempora quisquam maxime odio, necessitatibus, laboriosam recusandae numquam facilis omnis ratione ab veniam optio aut. Deserunt illum accusantium quibusdam. Eaque quae dolorem illum hic incidunt, autem, neque porro necessitatibus distinctio sit, blanditiis odio aliquid. Labore pariatur esse, ex quasi enim eos quas nobis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat distinctio voluptatem qui, impedit itaque similique animi libero saepe rerum deleniti.</p>
+    </section>
+    
+   
+  </main>
+
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - EdgeLedger</p>
+  </footer>
+
+  <script>
+
+    // Navbar Background Switch + Animation
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if(window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if(!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function() {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+      }
+
+    }
+  </script>
+
+
+
+</body>
+</html>
