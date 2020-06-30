@@ -40,4 +40,39 @@ html, body {
   color: #fff;
 }
 
+ /* Nested dropdown show */
+ #navbar ul li:hover ul {
+   display: block;
+   position: absolute;
+   left: 0;
+   width: 200px;
+   margin-top: 1rem;
+ }
 
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+  color: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+  background: #e0e0e0;
+  color: inherit;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  color: #fff;
+  background: coral;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: chocolate;
+}
