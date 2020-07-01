@@ -76,3 +76,28 @@ html, body {
 #navbar ul li:hover ul li:hover span {
   background: chocolate;
 }
+
+#showcase {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  background: coral;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
